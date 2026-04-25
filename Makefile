@@ -5,9 +5,9 @@ TAP = juegozx.tap
 ORG = 24200
 
 # Z88DK and AppMake settings
-ZCC = /home/plopez/proj/z88dk/bin/zcc +zx
+ZCC = $(Z88DK_PATH)/bin/zcc +zx
 ZCCFLAGS = -vn -lndos -zorg=$(ORG)
-APMAKE = /home/plopez/proj/z88dk/src/appmake/z88dk-appmake +zx
+APMAKE = $(Z88DK_PATH)/src/appmake/z88dk-appmake +zx
 
 # Default rule to build the .tap file
 all: $(TAP)
